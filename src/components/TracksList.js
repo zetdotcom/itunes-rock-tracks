@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import TrackCard from './TrackCard';
+
 import './TrackList.scss';
 
 export default function TracksList() {
@@ -31,10 +32,5 @@ export default function TracksList() {
 		);
 	}
 
-	return (
-		<>
-			<div>asdasd</div>
-			<div>{renderContent()}</div>
-		</>
-	);
+	return <div>{renderContent()}</div>;
 }
