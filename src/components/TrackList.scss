@@ -1,0 +1,11 @@
+.track-list-grid {
+	display: grid;
+	grid-auto-rows: minmax(125px, auto);
+	grid-gap: 0.5rem;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	list-style: none;
+	&__item {
+		height: 100%;
+	}
+}
