@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getUSD } from '../utils';
 
 export default function TrackCard({ trackName, artist, price, artworkUrl, id }) {
 	return (
@@ -9,10 +10,8 @@ export default function TrackCard({ trackName, artist, price, artworkUrl, id }) 
 			</div>
 			<div>{trackName}</div>
 			<div>{artist}</div>
-			<div>{price}</div>
-			<button>
-				<Link to={`/${id}`}>More details</Link>
-			</button>
+			<div>{getUSD(price)}</div>
+			<Link to={`/${id}`}>More details</Link>
 		</div>
 	);
 }
