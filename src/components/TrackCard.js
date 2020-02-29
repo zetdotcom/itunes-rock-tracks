@@ -1,17 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ButtonLink from './atoms/ButtonLink';
+import Paper from './atoms/Paper';
 import { getUSD } from '../utils';
+import './TrackCard.scss';
 
 export default function TrackCard({ trackName, artist, price, artworkUrl, id }) {
 	return (
-		<div data-testid='track-card' style={{ border: '1px solid red', height: '100%' }}>
+		<Paper data-testid='track-card'>
 			<div>
 				<img width='100%' height='100%' src={artworkUrl} alt={trackName} />
 			</div>
 			<div>{trackName}</div>
 			<div>{artist}</div>
 			<div>{getUSD(price)}</div>
-			<Link to={`/${id}`}>More details</Link>
-		</div>
+			<div>
+				<ButtonLink element='Link' to={`/${id}`}>
+					See more
+				</ButtonLink>
+			</div>
+		</Paper>
 	);
 }

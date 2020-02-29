@@ -1,0 +1,14 @@
+.mz-button-link {
+	position: relative;
+	padding: 10px 15px;
+	border: none;
+	background: linear-gradient(to right, #5c881a 0%, #9dbe3d 100%);
+	cursor: pointer;
+	border-radius: 8px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	&:hover {
+		text-decoration: underline;
+	}
+}

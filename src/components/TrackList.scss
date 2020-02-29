@@ -1,10 +1,11 @@
-.track-list-grid {
+.track-list {
 	display: grid;
-	grid-auto-rows: minmax(125px, auto);
-	grid-gap: 0.5rem;
-	align-items: center;
+	grid-auto-rows: auto;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 15px;
+	align-items: center;
 	list-style: none;
+	padding: 10px;
 	&__item {
 		height: 100%;
 	}

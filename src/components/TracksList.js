@@ -16,9 +16,9 @@ export default function TracksList() {
 			return <div>Loading ...</div>;
 		}
 		return (
-			<ul className='track-list-grid'>
+			<ul className='track-list'>
 				{tracksList.map(track => (
-					<li className='track-list-grid__item' key={track.trackId}>
+					<li className='track-list-__item' key={track.trackId}>
 						<TrackCard
 							id={track.trackId}
 							trackName={track.trackName}

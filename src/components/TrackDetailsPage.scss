@@ -1,0 +1,8 @@
+.track-details-page {
+	width: 50%;
+	margin: 20px auto;
+
+	@media (max-width: 710px) {
+		width: 100%;
+	}
+}
