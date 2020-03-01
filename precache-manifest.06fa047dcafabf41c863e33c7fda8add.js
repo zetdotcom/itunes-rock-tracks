@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "463e0e9f7bd44b998462f1019067f611",
+    "revision": "6db4a4dd7921ad22b01507c1ce29de41",
     "url": "/itunes-rock-tracks/index.html"
   },
   {
-    "revision": "4fb647014e0022437787",
+    "revision": "4f5db5df959fae1a41d5",
     "url": "/itunes-rock-tracks/static/css/main.dc6dcdf0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/itunes-rock-tracks/static/js/2.915890d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4fb647014e0022437787",
-    "url": "/itunes-rock-tracks/static/js/main.d2d427e6.chunk.js"
+    "revision": "4f5db5df959fae1a41d5",
+    "url": "/itunes-rock-tracks/static/js/main.ea75f7d9.chunk.js"
   },
   {
     "revision": "a7fc14c204fbb25bfb9f",
