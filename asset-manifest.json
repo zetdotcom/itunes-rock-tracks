@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/itunes-rock-tracks/static/css/main.dc6dcdf0.chunk.css",
-    "main.js": "/itunes-rock-tracks/static/js/main.53e834e2.chunk.js",
-    "main.js.map": "/itunes-rock-tracks/static/js/main.53e834e2.chunk.js.map",
+    "main.js": "/itunes-rock-tracks/static/js/main.d2d427e6.chunk.js",
+    "main.js.map": "/itunes-rock-tracks/static/js/main.d2d427e6.chunk.js.map",
     "runtime-main.js": "/itunes-rock-tracks/static/js/runtime-main.00c5cd5b.js",
     "runtime-main.js.map": "/itunes-rock-tracks/static/js/runtime-main.00c5cd5b.js.map",
     "static/js/2.915890d8.chunk.js": "/itunes-rock-tracks/static/js/2.915890d8.chunk.js",
     "static/js/2.915890d8.chunk.js.map": "/itunes-rock-tracks/static/js/2.915890d8.chunk.js.map",
     "index.html": "/itunes-rock-tracks/index.html",
-    "precache-manifest.50e9e6ccc03d8118268b541157f8068f.js": "/itunes-rock-tracks/precache-manifest.50e9e6ccc03d8118268b541157f8068f.js",
+    "precache-manifest.2d86f17b885df89d45ee498d3de1e4f2.js": "/itunes-rock-tracks/precache-manifest.2d86f17b885df89d45ee498d3de1e4f2.js",
     "service-worker.js": "/itunes-rock-tracks/service-worker.js",
     "static/css/main.dc6dcdf0.chunk.css.map": "/itunes-rock-tracks/static/css/main.dc6dcdf0.chunk.css.map",
     "static/js/2.915890d8.chunk.js.LICENSE.txt": "/itunes-rock-tracks/static/js/2.915890d8.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.00c5cd5b.js",
     "static/js/2.915890d8.chunk.js",
     "static/css/main.dc6dcdf0.chunk.css",
-    "static/js/main.53e834e2.chunk.js"
+    "static/js/main.d2d427e6.chunk.js"
   ]
 }
