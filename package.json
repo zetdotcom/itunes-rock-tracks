@@ -2,7 +2,7 @@
 	"name": "itunes-rock-tracks",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://zetdotcom.github.io/itunes-rock-tracks",
+	"homepage": "http://zetdotcom.github.io/itunes-rock-tracks/",
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.2.5",
 		"@testing-library/jest-dom": "^4.2.4",

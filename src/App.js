@@ -19,11 +19,11 @@ function App() {
 		<Router>
 			<div className='App'>
 				<Switch>
-					<Route exact path={`/${HOME_ROUTE}`}>
+					<Route exact path={`/`}>
 						<TracksList />
 					</Route>
-					<Redirect exact from='/' to={`/${HOME_ROUTE}`} />
-					<Route path={`/${HOME_ROUTE}/:trackId`}>
+					{/* <Redirect exact from='/' to={`/${HOME_ROUTE}`} /> */}
+					<Route path={`/:trackId`}>
 						<TrackDetailsPage />
 					</Route>
 				</Switch>
