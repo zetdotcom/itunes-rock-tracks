@@ -1,10 +1,7 @@
 import React from 'react';
-// import { Provider } from 'react-redux';
-import { Provider } from 'react-redux';
 import { createMemoryHistory } from 'history';
 import { render, cleanup, fireEvent, waitForElement } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import store from '../redux/store';
 import TrackCard from '../components/TrackCard';
 import { Router } from 'react-router-dom';
 
@@ -17,12 +14,6 @@ const props = propsOverride => ({
 	...propsOverride,
 });
 
-// const renderComponent = newStore =>
-// 	render(
-// 		<Provider store={store(newStore)}>
-// 			<TracksCard />
-// 		</Provider>
-// 	);
 const history = createMemoryHistory();
 const renderComponent = () =>
 	render(
@@ -33,7 +24,7 @@ const renderComponent = () =>
 
 afterEach(cleanup);
 
-describe('TEST PlayerCard', () => {
+describe('TEST TrackCard', () => {
 	test('should match snapshot', () => {
 		const { asFragment } = renderComponent();
 		expect(asFragment).toMatchSnapshot();

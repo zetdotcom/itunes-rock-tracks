@@ -5,6 +5,7 @@ import { render, cleanup, fireEvent, waitForElement } from '@testing-library/rea
 import '@testing-library/jest-dom/extend-expect';
 import store from '../redux/store';
 import TracksList from '../components/TracksList';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // const props = propsOverride => ({
 // 	player: {
@@ -27,13 +28,15 @@ import TracksList from '../components/TracksList';
 const renderComponent = newStore =>
 	render(
 		<Provider store={store(newStore)}>
-			<TracksList />
+			<Router>
+				<TracksList />
+			</Router>
 		</Provider>
 	);
 
 afterEach(cleanup);
 
-describe('TEST PlayerCard', () => {
+describe('TEST TrackList', () => {
 	test('should match snapshot', () => {
 		const { asFragment } = renderComponent();
 		expect(asFragment).toMatchSnapshot();
@@ -52,9 +55,14 @@ describe('TEST PlayerCard', () => {
 	});
 	test('should render n tracks', async () => {
 		const tracksArr = () =>
-			new Array(10)
-				.fill()
-				.map((x, i) => ({ trackName: 'track name', artist: 'artist', price: '1.00', artworkUrl: 'img', id: i }));
+			new Array(10).fill().map((x, i) => ({
+				trackName: 'track name',
+				artist: 'artist',
+				price: '1.00',
+				artworkUrl: 'img',
+				id: i,
+				trackId: i,
+			}));
 		const mockTracksList = tracksArr();
 		const newState = {
 			tracks: {

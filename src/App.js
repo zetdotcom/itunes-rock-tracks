@@ -6,6 +6,7 @@ import { fetchTracks } from './redux/tracksSlice';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import './App.css';
+import { HOME_ROUTE } from './constants';
 
 function App() {
 	const dispatch = useDispatch();
@@ -18,11 +19,11 @@ function App() {
 		<Router>
 			<div className='App'>
 				<Switch>
-					<Route exact path='/itunes-rock-tracks'>
+					<Route exact path={`/${HOME_ROUTE}`}>
 						<TracksList />
 					</Route>
-					<Redirect exact from='/' to='/itunes-rock-tracks' />
-					<Route path='/:trackId'>
+					<Redirect exact from='/' to={`/${HOME_ROUTE}`} />
+					<Route path={`/${HOME_ROUTE}/:trackId`}>
 						<TrackDetailsPage />
 					</Route>
 				</Switch>
