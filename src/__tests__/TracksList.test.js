@@ -45,7 +45,7 @@ describe('TEST PlayerCard', () => {
 				error: 'some error',
 			},
 		};
-		const { getAllByTestId, getByText } = renderComponent(newState);
+		const { getByText } = renderComponent(newState);
 
 		const errorMessage = await waitForElement(() => getByText(/ there was an error/i));
 		expect(errorMessage).toBeInTheDocument();

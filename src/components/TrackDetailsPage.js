@@ -17,17 +17,23 @@ export default function TrackDetailsPage() {
 	return (
 		<div className='track-details-page'>
 			<Paper>
-				<div>
-					<img width='100%' height='100%' src={artworkUrl100} alt={trackName} />
-				</div>
-				<div>{trackName}</div>
-				<div>{artistName}</div>
-				<div>Price: {getUSD(trackPrice)}</div>
-				<div>Duration: {msToTime(trackTimeMillis)}</div>
-				<div>Release Date: {trackReleaseDate}</div>
-				<ButtonLink element='a' href={track.trackViewUrl} target='blank' rel='noopoener noreferrer'>
-					More details
-				</ButtonLink>
+				{Object.keys(track).length ? (
+					<>
+						<div>
+							<img width='100%' height='100%' src={artworkUrl100} alt={trackName} />
+						</div>
+						<div>{trackName}</div>
+						<div>{artistName}</div>
+						<div>Price: {getUSD(trackPrice)}</div>
+						<div>Duration: {msToTime(trackTimeMillis)}</div>
+						<div>Release Date: {trackReleaseDate}</div>
+						<ButtonLink element='a' href={track.trackViewUrl} target='blank' rel='noopoener noreferrer'>
+							More details
+						</ButtonLink>
+					</>
+				) : (
+					<div>Soory, no details find for this track</div>
+				)}
 			</Paper>
 		</div>
 	);

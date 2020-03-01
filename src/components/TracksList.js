@@ -18,7 +18,7 @@ export default function TracksList() {
 		return (
 			<ul className='track-list'>
 				{tracksList.map(track => (
-					<li className='track-list-__item' key={track.trackId}>
+					<li className='track-list__item' key={track.trackId}>
 						<TrackCard
 							id={track.trackId}
 							trackName={track.trackName}

@@ -13,7 +13,6 @@ const tracksSlice = createSlice({
 			state.loading = true;
 		},
 		receiveTracks(state, action) {
-			// const  = action.payload;
 			state.tracksList = action.payload;
 			state.loading = false;
 		},
