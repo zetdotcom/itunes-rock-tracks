@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import TracksList from './components/TracksList';
 import TrackDetailsPage from './components/TrackDetailsPage';
 import { fetchTracks } from './redux/tracksSlice';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import { HOME_ROUTE } from './constants';
@@ -19,11 +19,10 @@ function App() {
 		<Router>
 			<div className='App'>
 				<Switch>
-					<Route exact path={`/`}>
+					<Route exact path={`/${HOME_ROUTE}`}>
 						<TracksList />
 					</Route>
-					{/* <Redirect exact from='/' to={`/${HOME_ROUTE}`} /> */}
-					<Route path={`/:trackId`}>
+					<Route path={`/${HOME_ROUTE}/:trackId`}>
 						<TrackDetailsPage />
 					</Route>
 				</Switch>

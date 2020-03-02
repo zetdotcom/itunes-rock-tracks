@@ -15,7 +15,7 @@ export default function TrackCard({ trackName, artist, price, artworkUrl, id }) 
 			<div>{artist}</div>
 			<div>{getUSD(price)}</div>
 			<div>
-				<ButtonLink element='Link' to={`${id}`}>
+				<ButtonLink element='Link' to={`/${HOME_ROUTE}/${id}`}>
 					See more
 				</ButtonLink>
 			</div>
